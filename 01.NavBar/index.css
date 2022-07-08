@@ -1,0 +1,122 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+body {
+    overscroll-behavior-y: none;
+    overflow-y: scroll;
+}
+/* 导航条 */
+.navbar {
+    position: fixed;
+    top: 0px;
+    box-sizing: border-box;
+    height: 64px;
+    width: 100%;
+    padding: 0 24px;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    box-shadow: 0 2px 4px rgb(0 0 0 / 8%);
+}
+/* 导航条左侧 */
+.navbar-left {
+    display: flex;
+    align-items: center;
+    list-style: none;
+}
+.navbar-left li {
+    display: flex;
+    align-items: center;
+}
+.navbar-left .logo-wrapper {
+    display: flex;
+    align-items: center;
+}
+.navbar-left .logo {
+    width: 60px;
+    margin-right: 10px;
+}
+.navbar-left li:not(:last-child) {
+    margin-right: 20px;
+}
+.navbar-left li a {
+    text-decoration: none;
+    color: #333;
+    font-size: 14px;
+}
+
+/* 搜索框 */
+.search {
+    margin: 0 10px;
+    flex-grow: 1;
+    flex-shrink: 1;
+}
+.search .search-inner {
+    box-sizing: border-box;
+    max-width: 500px;
+    min-width: 180px;
+    margin: 0 auto;
+    height: 40px;
+    border: 1px solid #F1F2F3;
+    border-radius: 8px;
+    background-color: #F1F2F3;
+    display: flex;
+    align-items: center;
+    padding: 4px 8px;
+}
+.search .search-inner:hover {
+    background-color: #fff;
+}
+.search .search-inner input {
+    /* height: 32px; */
+    width: 100%;
+    background-color: transparent;
+    border: none;
+    box-shadow: none;
+    outline: none;
+}
+
+/* 导航条右侧 */
+.navbar-right {
+    display: flex;
+    align-items: center;
+    list-style: none;
+}
+.navbar-right li a {
+    text-decoration: none;
+    color: #333;
+    font-size: 14px;
+}
+.navbar-right li:not(:last-child) {
+    margin-right: 20px;
+}
+.navbar-right li .upload-btn {
+    width: 90px;
+    height: 34px;
+    border-radius: 8px;
+    background: #fb7299;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+.navbar-right li .upload-btn:hover {
+    background-color: #fc8bab;
+}
+
+/* 内容区 */
+.content {
+    height: 2000px;
+    background-color: #69c0ff;
+    padding-top: 64px;
+    color: #fff;
+}
+.content .content-title {
+    text-align: center;
+    font-size: 64px;
+    font-weight: 400;
+}
+.content .content-subtitle {
+    text-align: center;
+    font-size: 44px;
+}
